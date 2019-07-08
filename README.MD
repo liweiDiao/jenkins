@@ -59,5 +59,8 @@
    ![Image 步骤15](https://github.com/liweiDiao/jenkins/blob/master/image/17.png)    
    
    ![Image 步骤16](https://github.com/liweiDiao/jenkins/blob/master/image/18.png)    
-     
+   
+   #### 5、插件安装（如果在安装Jenkins的时候没有安装相关插件，可以按照如下方式安装，已经安装，则不需要）  系统管理>>插件管理    
+      gitlab插件：
+     ![Image 步骤16](https://github.com/liweiDiao/jenkins/blob/master/image/19.png) 
      
