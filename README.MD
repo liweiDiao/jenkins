@@ -108,7 +108,7 @@
 
        让配置生效 ， source /etc/profile    
        看看是否成功，mvn -v    
-   ![Image 步骤34](https://github.com/liweiDiao/jenkins/blob/master/image/34.png)  
+   
        
    #### 8、配置maven和jdk  系统管理>>全局工具配置    
    ![Image 步骤35](https://github.com/liweiDiao/jenkins/blob/master/image/35.png)     
