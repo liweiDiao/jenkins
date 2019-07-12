@@ -61,6 +61,20 @@
    ![Image 步骤16](https://github.com/liweiDiao/jenkins/blob/master/image/18.png)    
    
    #### 5、插件安装（如果在安装Jenkins的时候没有安装相关插件，可以按照如下方式安装，已经安装，则不需要）  系统管理>>插件管理    
-      gitlab插件：
-     ![Image 步骤16](https://github.com/liweiDiao/jenkins/blob/master/image/19.png) 
+      gitlab插件：    
+   ![Image 步骤16](https://github.com/liweiDiao/jenkins/blob/master/image/20.png)  
+   
+      maven插件：    
+   ![Image 步骤16](https://github.com/liweiDiao/jenkins/blob/master/image/21.png)      
+      
+      常用的插件    
+      Deploy to container plugin（部署用）    
+      Git plugin（GIt插件）    
+      Github Integration Plugin（Git集成）    
+      Publish Over SSH（通过SSH来执行命令）    
+      Maven Integration（maven插件）    
+      postbuildscript（用于执行shell命令）    
+      build with parameters（用于构建时可以选择分支，而不是写死要构建的分支名字）    
+ 
+   
      
