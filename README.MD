@@ -75,6 +75,26 @@
       Maven Integration（maven插件）    
       postbuildscript（用于执行shell命令）    
       build with parameters（用于构建时可以选择分支，而不是写死要构建的分支名字）    
+      
+   #### 6、配置邮件功能  系统管理>>系统设置    
+   ![Image 步骤16](https://github.com/liweiDiao/jenkins/blob/master/image/22.png)    
+      
+      设置邮箱：     
+   ![Image 步骤16](https://github.com/liweiDiao/jenkins/blob/master/image/23.png)    
+      
+      设置邮箱配置:    
+   ![Image 步骤24](https://github.com/liweiDiao/jenkins/blob/master/image/24.png)    
+      
+   ![Image 步骤25](https://github.com/liweiDiao/jenkins/blob/master/image/25.png)    
+      
+      测试邮件是否正常：    
+   ![Image 步骤25](https://github.com/liweiDiao/jenkins/blob/master/image/26.png)    
+   
+   #### 7、安装maven  下载maven包，这里下载3.6.1  ，下载地址：http://mirror.bit.edu.cn/apache/maven/maven-3/3.6.1/binaries/    
+   
+
+
+   
  
    
      
