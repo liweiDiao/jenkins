@@ -127,17 +127,17 @@
    #### 9、构建github项目    
         新建任务>>>>选择自由风格的项目    
         选择github项目，填写git地址。丢弃旧的构建，这里保持构建的天数1，保持构建的最大个数 1    
-   ![Image 步骤25](https://github.com/liweiDiao/jenkins/blob/master/image/40.png) 
+   ![Image 步骤40](https://github.com/liweiDiao/jenkins/blob/master/image/40.png) 
         
         Git: 配置git地址Repository URL、添加账号Credentials，github的帐号密码    
         选择分支Branch Specifier，这里选择master、 源码库浏览器选择githubweb   
-   ![Image 步骤25](https://github.com/liweiDiao/jenkins/blob/master/image/41.png) 
+   ![Image 步骤41](https://github.com/liweiDiao/jenkins/blob/master/image/41.png) 
         
         （这里打算搞自动检测github有提交就重新构建。再这里可以忽略该配置）    
-   ![Image 步骤25](https://github.com/liweiDiao/jenkins/blob/master/image/42.png) 
+   ![Image 步骤42](https://github.com/liweiDiao/jenkins/blob/master/image/42.png) 
         
         填写pom文件：     
-   ![Image 步骤25](https://github.com/liweiDiao/jenkins/blob/master/image/43.png) 
+   ![Image 步骤44](https://github.com/liweiDiao/jenkins/blob/master/image/44.png) 
         
         选择保存，然后就可以构建了。
     
