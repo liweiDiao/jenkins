@@ -65,7 +65,7 @@
    ![Image 步骤16](https://github.com/liweiDiao/jenkins/blob/master/image/20.png)  
    
       maven插件：    
-   ![Image 步骤16](https://github.com/liweiDiao/jenkins/blob/master/image/21.png)      
+   ![Image 步骤21](https://github.com/liweiDiao/jenkins/blob/master/image/21.png)      
       
       常用的插件    
       Deploy to container plugin（部署用）    
@@ -76,25 +76,69 @@
       postbuildscript（用于执行shell命令）    
       build with parameters（用于构建时可以选择分支，而不是写死要构建的分支名字）    
       
-   #### 6、配置邮件功能  系统管理>>系统设置    
-   ![Image 步骤16](https://github.com/liweiDiao/jenkins/blob/master/image/22.png)    
+   #### 6、配置邮件功能  系统管理>>系统设置     
       
       设置邮箱：     
-   ![Image 步骤16](https://github.com/liweiDiao/jenkins/blob/master/image/23.png)    
+   ![Image 步骤23](https://github.com/liweiDiao/jenkins/blob/master/image/23.png)    
       
       设置邮箱配置:    
-   ![Image 步骤24](https://github.com/liweiDiao/jenkins/blob/master/image/24.png)    
+   ![Image 步骤27](https://github.com/liweiDiao/jenkins/blob/master/image/27.png)    
       
-   ![Image 步骤25](https://github.com/liweiDiao/jenkins/blob/master/image/25.png)    
+   ![Image 步骤28](https://github.com/liweiDiao/jenkins/blob/master/image/28.png)    
+   
+   ![Image 步骤29](https://github.com/liweiDiao/jenkins/blob/master/image/29.png)    
       
       测试邮件是否正常：    
-   ![Image 步骤25](https://github.com/liweiDiao/jenkins/blob/master/image/26.png)    
+   ![Image 步骤30](https://github.com/liweiDiao/jenkins/blob/master/image/30.png)    
    
-   #### 7、安装maven  下载maven包，这里下载3.6.1  ，下载地址：http://mirror.bit.edu.cn/apache/maven/maven-3/3.6.1/binaries/    
-   
+   #### 7、安装maven  下载maven包，这里下载3.6.1  ，下载地址：http://mirror.bit.edu.cn/apache/maven/maven-3/3.6.1/binaries/ 
+       
+   ![Image 步骤25](https://github.com/liweiDiao/jenkins/blob/master/image/33.png)    
+       
+       在 /usr/ 目录下建立maven目录，然后将maven.tar包放到/usr/maven/目录下，解压。    
 
+       然后进入到/etc/ 目录下，修改profile文件。    
 
+       将下面这个配置添加到profile文件中    
+
+       export MAVEN_HOME=/usr/maven/apache-maven-3.6.1    
+       export MAVEN_HOME    
+       export PATH=$PATH:$MAVEN_HOME/bin    
+   ![Image 步骤33](https://github.com/liweiDiao/jenkins/blob/master/image/34.png)  
+
+       让配置生效 ， source /etc/profile    
+       看看是否成功，mvn -v    
+   ![Image 步骤34](https://github.com/liweiDiao/jenkins/blob/master/image/34.png)  
+       
+   #### 8、配置maven和jdk  系统管理>>全局工具配置    
+   ![Image 步骤35](https://github.com/liweiDiao/jenkins/blob/master/image/35.png)     
+        
+        填写上安装maven的目录、jdk的目录    
+   ![Image 步骤36](https://github.com/liweiDiao/jenkins/blob/master/image/36.png) 
    
- 
-   
+   ![Image 步骤37](https://github.com/liweiDiao/jenkins/blob/master/image/37.png) 
+        
+        配置git，查看git目录
+   ![Image 步骤38](https://github.com/liweiDiao/jenkins/blob/master/image/38.png) 
+        
+        配置git目录
+   ![Image 步骤39](https://github.com/liweiDiao/jenkins/blob/master/image/39.png) 
+        
+   #### 9、构建github项目    
+        新建任务>>>>选择自由风格的项目    
+        选择github项目，填写git地址。丢弃旧的构建，这里保持构建的天数1，保持构建的最大个数 1    
+   ![Image 步骤25](https://github.com/liweiDiao/jenkins/blob/master/image/40.png) 
+        
+        Git: 配置git地址Repository URL、添加账号Credentials，github的帐号密码    
+        选择分支Branch Specifier，这里选择master、 源码库浏览器选择githubweb   
+   ![Image 步骤25](https://github.com/liweiDiao/jenkins/blob/master/image/41.png) 
+        
+        （这里打算搞自动检测github有提交就重新构建。再这里可以忽略该配置）    
+   ![Image 步骤25](https://github.com/liweiDiao/jenkins/blob/master/image/42.png) 
+        
+        填写pom文件：     
+   ![Image 步骤25](https://github.com/liweiDiao/jenkins/blob/master/image/43.png) 
+        
+        选择保存，然后就可以构建了。
+    
      
